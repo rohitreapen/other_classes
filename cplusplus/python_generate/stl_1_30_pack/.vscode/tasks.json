@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C++98: build active file",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++98",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+\usepackage{fvextra}
+\usepackage{seqsplit}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+    breaklines,
+    breakanywhere,
+    commandchars=\\\{\},
+    breaksymbol=,  % Empty - no ↪ continuation symbol
+    breakindent=2em, % instead of ↪ symbol, indent instead
+    tabsize=2,
+    obeytabs
+    }
+
+\newcommand{\ctok}[1]{\texttt{\seqsplit{#1}}}
