@@ -1,0 +1,4 @@
+Hello file!
+Appending a new line.
+Line A
+Line B
